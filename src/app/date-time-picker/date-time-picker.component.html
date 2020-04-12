@@ -1,0 +1,22 @@
+<div fxLayout="row">
+  <mat-form-field fxFlex="grow">
+    <mat-label>Datum auswählen</mat-label>
+    <input matInput [matDatepicker]="datePicker" [formControl]="dateFormControl">
+    <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+    <mat-datepicker #datePicker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field *ngIf="hideTime === false" fxFlex="grow">
+    <input [format]="24" [ngxTimepicker]="timePicker" [formControl]="timeFormControl" matInput
+           placeholder="Zeit auswählen">
+  </mat-form-field>
+  <ngx-material-timepicker [confirmBtnTmpl]="confirmTemplate" [cancelBtnTmpl]="cancelTemplate"
+                           #timePicker></ngx-material-timepicker>
+</div>
+
+<ng-template #confirmTemplate>
+  <button mat-button color="primary" style="margin-left: 10px" mat-raised-button>Speichern</button>
+</ng-template>
+
+<ng-template #cancelTemplate>
+  <button mat-button>Abbrechen</button>
+</ng-template>

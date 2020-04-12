@@ -1,0 +1,64 @@
+<form action="" [formGroup]="messageForm" fxLayoutAlign="center">
+  <div fxLayoutGap="10px" fxLayout="column" fxFlex="60%" class="mat-elevation-z3"
+       style="padding: 20px; margin-top: 50px;">
+    <h4>Inhalt</h4>
+    <mat-form-field>
+      <mat-label>Darstellung</mat-label>
+      <mat-select formControlName="display">
+        <mat-option>Bitte auswählen</mat-option>
+        <mat-option *ngFor="let message of messageTypes" [value]="message">{{message}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Titel" formControlName="title">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Mitteilung</mat-label>
+      <textarea name="" id="" formControlName="message" cols="30" rows="10" matInput></textarea>
+    </mat-form-field>
+
+    <h4>Anzeige</h4>
+    <mat-form-field>
+      <mat-select formControlName="priority">
+        <mat-option>Bitte auswählen</mat-option>
+        <mat-option [value]="0">Normal</mat-option>
+        <mat-option [value]="1">Dringend</mat-option>
+        <mat-option [value]="2">Info</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Empfänger</mat-label>
+      <mat-select multiple>
+        <mat-option>Schülerinnen und Schüler</mat-option>
+        <mat-option>Lehrpersonen</mat-option>
+        <mat-option>Mitarbeitende</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <kswe-date-time-picker formControlName="from"></kswe-date-time-picker>
+    <kswe-date-time-picker formControlName="till"></kswe-date-time-picker>
+
+    <h4>
+      Status und Erfasser
+    </h4>
+    <mat-form-field>
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="state">
+        <mat-option>Bitte auswählen</mat-option>
+        st
+        <mat-option [value]="'Freigeben'">Freigegeben</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input disabled matInput placeholder="Erfassen" formControlName="creator">
+    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="flex-end" fxLayoutGap="10px">
+      <button type="button" mat-button color="warn">Abbrechen</button>
+      <button type="button" mat-button (click)="showValues = true">Log</button>
+      <button type="submit" mat-button mat-raised-button color="primary">Speichern</button>
+    </div>
+  </div>
+</form>
+
+<pre *ngIf="showValues">
+  {{messageForm.value | json}}
+</pre>
