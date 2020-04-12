@@ -31,7 +31,6 @@ export class DateTimePickerComponent implements OnInit, ControlValueAccessor {
       this.dateFormControl.valueChanges.pipe(startWith(null)),
       this.timeFormControl.valueChanges.pipe(startWith('00:00')),
     ]).subscribe(([date, time]) => {
-      debugger;
       this.writeValue(
         moment(date)
           .startOf('day')
@@ -53,9 +52,8 @@ export class DateTimePickerComponent implements OnInit, ControlValueAccessor {
     if (this.onChange) {
       if (moment(obj).isValid()) {
         this.onChange(obj);
-        console.log(moment(obj).format('DD.MM.YYYY'));
         this.dateFormControl.patchValue(moment(obj), {emitEvent: false});
-        this.timeFormControl.patchValue(moment(obj).format('hh:mm'), {emitEvent: false});
+        this.timeFormControl.patchValue(moment(obj).format('HH:mm'), {emitEvent: false});
       } else {
         this.onChange(null);
       }

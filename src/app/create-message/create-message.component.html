@@ -28,7 +28,7 @@
     </mat-form-field>
     <mat-form-field>
       <mat-label>Empfänger</mat-label>
-      <mat-select multiple>
+      <mat-select multiple formControlName="recipientGroup">
         <mat-option>Schülerinnen und Schüler</mat-option>
         <mat-option>Lehrpersonen</mat-option>
         <mat-option>Mitarbeitende</mat-option>
@@ -44,7 +44,6 @@
       <mat-label>Status</mat-label>
       <mat-select formControlName="state">
         <mat-option>Bitte auswählen</mat-option>
-        st
         <mat-option [value]="'Freigeben'">Freigegeben</mat-option>
       </mat-select>
     </mat-form-field>
