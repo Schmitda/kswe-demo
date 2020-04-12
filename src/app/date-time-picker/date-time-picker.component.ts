@@ -17,6 +17,9 @@ import * as moment from 'moment';
   ]
 })
 export class DateTimePickerComponent implements OnInit, ControlValueAccessor {
+  /**
+   * Gives the user the ability to hide the time-picker
+   */
   @Input() hideTime = false;
   public dateFormControl: FormControl = new FormControl();
   public timeFormControl: FormControl = new FormControl();
@@ -26,6 +29,9 @@ export class DateTimePickerComponent implements OnInit, ControlValueAccessor {
   constructor() {
   }
 
+  /**
+   * Sets up the streams to keep the display in sync with the value propagated
+   */
   ngOnInit(): void {
     combineLatest([
       this.dateFormControl.valueChanges.pipe(startWith(null)),
@@ -40,14 +46,24 @@ export class DateTimePickerComponent implements OnInit, ControlValueAccessor {
     });
   }
 
+  /**
+   * Assigned the injected on change function to a local property
+   */
   registerOnChange(fn: any): void {
     this.onChange = fn;
   }
 
+  /**
+   * Assigned the injected on touch function to a local property
+   */
   registerOnTouched(fn: any): void {
     this.onTouch = fn;
   }
 
+  /**
+   * This function is called whenever patchValue is called or an value gets assigned to our form.
+   * Also the function is manually called from our side, when either one of the formControls got changed.
+   */
   writeValue(obj: any): void {
     if (this.onChange) {
       if (moment(obj).isValid()) {

@@ -1,0 +1,817 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>kswe-form-demo documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">kswe-form-demo documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CreateMessageComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/create-message/create-message.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>kswe-create-message</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./create-message.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-message.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#messageForm">messageForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#messageTypes">messageTypes</a>
+                            </li>
+                            <li>
+                                <a href="#showValues">showValues</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#atLeastOne">atLeastOne</a>
+                            </li>
+                            <li>
+                                <a href="#isChecked">isChecked</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#toggle">toggle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/create-message/create-message.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="atLeastOne"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            atLeastOne
+                        </b>
+                        <a href="#atLeastOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>atLeastOne(c: <a href="https://angular.io/api/forms/FormControl" target="_blank">FormControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/create-message/create-message.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>c</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ atLeastOne: { given: number; }; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isChecked"></a>
+                    <span class="name">
+                        <b>
+                            isChecked
+                        </b>
+                        <a href="#isChecked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isChecked(isChecked: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/create-message/create-message.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isChecked</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/create-message/create-message.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggle"></a>
+                    <span class="name">
+                        <b>
+                            toggle
+                        </b>
+                        <a href="#toggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggle(toggleValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/create-message/create-message.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>toggleValue</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="messageForm"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            messageForm</b>
+                            <a href="#messageForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/create-message/create-message.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="messageTypes"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            messageTypes</b>
+                            <a href="#messageTypes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;Termine und infos&#x27;, &#x27;Infos&#x27;, &#x27;Warnungen&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/create-message/create-message.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showValues"></a>
+                        <span class="name">
+                            <b>
+                            showValues</b>
+                            <a href="#showValues"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/create-message/create-message.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {FormBuilder, FormControl, FormGroup, Validators} from &#x27;@angular/forms&#x27;;
+
+export enum PriorityEnum {
+  NORMAL,
+  URGENT,
+  INFO
+}
+
+@Component({
+  selector: &#x27;kswe-create-message&#x27;,
+  templateUrl: &#x27;./create-message.component.html&#x27;,
+  styleUrls: [&#x27;./create-message.component.css&#x27;]
+})
+export class CreateMessageComponent implements OnInit {
+  public messageForm: FormGroup;
+  public messageTypes: string[] &#x3D; [&#x27;Termine und infos&#x27;, &#x27;Infos&#x27;, &#x27;Warnungen&#x27;];
+  showValues: boolean;
+
+  constructor(
+    private fb: FormBuilder
+  ) {
+    this.messageForm &#x3D; this.fb.group({
+      display: [null, Validators.required],
+      title: [null, [Validators.required, Validators.minLength(5)]],
+      message: [null, [Validators.required, Validators.minLength(20)]],
+      priority: [PriorityEnum.NORMAL, [Validators.required]],
+      recipientGroup: [null, [this.atLeastOne, Validators.required]],
+      from: [null, [Validators.required]],
+      till: [null, [Validators.required]],
+      state: [null, Validators.required],
+      creator: [&#x27;Daniel Schmitz&#x27;]
+    });
+  }
+
+  public atLeastOne(c: FormControl) {
+    if (c.value instanceof Array) {
+      return c.value.length &gt;&#x3D; 0 ? null : {
+        atLeastOne: {given: 0}
+      };
+    } else {
+      return null;
+    }
+  }
+
+  ngOnInit(): void {
+  }
+
+  toggle(toggleValue: string) {
+
+  }
+
+  isChecked(isChecked: string) {
+
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form action&#x3D;&quot;&quot; [formGroup]&#x3D;&quot;messageForm&quot; fxLayoutAlign&#x3D;&quot;center&quot;&gt;
+  &lt;div fxLayoutGap&#x3D;&quot;10px&quot; fxLayout&#x3D;&quot;column&quot; fxFlex&#x3D;&quot;60%&quot; class&#x3D;&quot;mat-elevation-z3&quot;
+       style&#x3D;&quot;padding: 20px; margin-top: 50px;&quot;&gt;
+    &lt;h4&gt;Inhalt&lt;/h4&gt;
+    &lt;mat-form-field&gt;
+      &lt;mat-label&gt;Darstellung&lt;/mat-label&gt;
+      &lt;mat-select formControlName&#x3D;&quot;display&quot;&gt;
+        &lt;mat-option&gt;Bitte auswählen&lt;/mat-option&gt;
+        &lt;mat-option *ngFor&#x3D;&quot;let message of messageTypes&quot; [value]&#x3D;&quot;message&quot;&gt;{{message}}&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+    &lt;mat-form-field&gt;
+      &lt;input type&#x3D;&quot;text&quot; matInput placeholder&#x3D;&quot;Titel&quot; formControlName&#x3D;&quot;title&quot;&gt;
+    &lt;/mat-form-field&gt;
+    &lt;mat-form-field&gt;
+      &lt;mat-label&gt;Mitteilung&lt;/mat-label&gt;
+      &lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; formControlName&#x3D;&quot;message&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot; matInput&gt;&lt;/textarea&gt;
+    &lt;/mat-form-field&gt;
+
+    &lt;h4&gt;Anzeige&lt;/h4&gt;
+    &lt;mat-form-field&gt;
+      &lt;mat-select formControlName&#x3D;&quot;priority&quot;&gt;
+        &lt;mat-option&gt;Bitte auswählen&lt;/mat-option&gt;
+        &lt;mat-option [value]&#x3D;&quot;0&quot;&gt;Normal&lt;/mat-option&gt;
+        &lt;mat-option [value]&#x3D;&quot;1&quot;&gt;Dringend&lt;/mat-option&gt;
+        &lt;mat-option [value]&#x3D;&quot;2&quot;&gt;Info&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+    &lt;mat-form-field&gt;
+      &lt;mat-label&gt;Empfänger&lt;/mat-label&gt;
+      &lt;mat-select multiple formControlName&#x3D;&quot;recipientGroup&quot;&gt;
+        &lt;mat-option&gt;Schülerinnen und Schüler&lt;/mat-option&gt;
+        &lt;mat-option&gt;Lehrpersonen&lt;/mat-option&gt;
+        &lt;mat-option&gt;Mitarbeitende&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+    &lt;kswe-date-time-picker formControlName&#x3D;&quot;from&quot;&gt;&lt;/kswe-date-time-picker&gt;
+    &lt;kswe-date-time-picker formControlName&#x3D;&quot;till&quot;&gt;&lt;/kswe-date-time-picker&gt;
+
+    &lt;h4&gt;
+      Status und Erfasser
+    &lt;/h4&gt;
+    &lt;mat-form-field&gt;
+      &lt;mat-label&gt;Status&lt;/mat-label&gt;
+      &lt;mat-select formControlName&#x3D;&quot;state&quot;&gt;
+        &lt;mat-option&gt;Bitte auswählen&lt;/mat-option&gt;
+        &lt;mat-option [value]&#x3D;&quot;&#x27;Freigeben&#x27;&quot;&gt;Freigegeben&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+    &lt;mat-form-field&gt;
+      &lt;input disabled matInput placeholder&#x3D;&quot;Erfassen&quot; formControlName&#x3D;&quot;creator&quot;&gt;
+    &lt;/mat-form-field&gt;
+    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;flex-end&quot; fxLayoutGap&#x3D;&quot;10px&quot;&gt;
+      &lt;button type&#x3D;&quot;button&quot; mat-button color&#x3D;&quot;warn&quot;&gt;Abbrechen&lt;/button&gt;
+      &lt;button type&#x3D;&quot;button&quot; mat-button (click)&#x3D;&quot;showValues &#x3D; true&quot;&gt;Log&lt;/button&gt;
+      &lt;button type&#x3D;&quot;submit&quot; mat-button mat-raised-button color&#x3D;&quot;primary&quot;&gt;Speichern&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;pre *ngIf&#x3D;&quot;showValues&quot;&gt;
+  {{messageForm.value | json}}
+&lt;/pre&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./create-message.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form action="" [formGroup]="messageForm" fxLayoutAlign="center">  <div fxLayoutGap="10px" fxLayout="column" fxFlex="60%" class="mat-elevation-z3"       style="padding: 20px; margin-top: 50px;">    <h4>Inhalt</h4>    <mat-form-field>      <mat-label>Darstellung</mat-label>      <mat-select formControlName="display">        <mat-option>Bitte auswählen</mat-option>        <mat-option *ngFor="let message of messageTypes" [value]="message">{{message}}</mat-option>      </mat-select>    </mat-form-field>    <mat-form-field>      <input type="text" matInput placeholder="Titel" formControlName="title">    </mat-form-field>    <mat-form-field>      <mat-label>Mitteilung</mat-label>      <textarea name="" id="" formControlName="message" cols="30" rows="10" matInput></textarea>    </mat-form-field>    <h4>Anzeige</h4>    <mat-form-field>      <mat-select formControlName="priority">        <mat-option>Bitte auswählen</mat-option>        <mat-option [value]="0">Normal</mat-option>        <mat-option [value]="1">Dringend</mat-option>        <mat-option [value]="2">Info</mat-option>      </mat-select>    </mat-form-field>    <mat-form-field>      <mat-label>Empfänger</mat-label>      <mat-select multiple formControlName="recipientGroup">        <mat-option>Schülerinnen und Schüler</mat-option>        <mat-option>Lehrpersonen</mat-option>        <mat-option>Mitarbeitende</mat-option>      </mat-select>    </mat-form-field>    <kswe-date-time-picker formControlName="from"></kswe-date-time-picker>    <kswe-date-time-picker formControlName="till"></kswe-date-time-picker>    <h4>      Status und Erfasser    </h4>    <mat-form-field>      <mat-label>Status</mat-label>      <mat-select formControlName="state">        <mat-option>Bitte auswählen</mat-option>        <mat-option [value]="\'Freigeben\'">Freigegeben</mat-option>      </mat-select>    </mat-form-field>    <mat-form-field>      <input disabled matInput placeholder="Erfassen" formControlName="creator">    </mat-form-field>    <div fxLayout="row" fxLayoutAlign="flex-end" fxLayoutGap="10px">      <button type="button" mat-button color="warn">Abbrechen</button>      <button type="button" mat-button (click)="showValues = true">Log</button>      <button type="submit" mat-button mat-raised-button color="primary">Speichern</button>    </div>  </div></form><pre *ngIf="showValues">  {{messageForm.value | json}}</pre></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'kswe-root'},{'name': 'CreateMessageComponent', 'selector': 'kswe-create-message'},{'name': 'DateTimePickerComponent', 'selector': 'kswe-date-time-picker'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CreateMessageComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateMessageComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
